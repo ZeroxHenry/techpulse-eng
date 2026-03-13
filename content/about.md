@@ -2,14 +2,14 @@
 title: "About"
 layout: "single"
 url: "/about/"
-summary: "About TechBlip"
+summary: "About TechBlips"
 ShowToc: false
 ShowBreadCrumbs: false
 ---
 
 ## Hey, I'm Henry.
 
-I started TechBlip because I was tired of tech news that's either too shallow or buried in jargon nobody asked for.
+I started TechBlips because I was tired of tech news that's either too shallow or buried in jargon nobody asked for.
 
 I'm an engineer who spends way too much time testing new AI tools, reading changelogs, and digging into tech that most people won't hear about until months later. So I figured — why not share what I find?
 

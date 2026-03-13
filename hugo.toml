@@ -1,13 +1,13 @@
-baseURL = "https://techpulse-eng.menaldo1234.workers.dev/"
+baseURL = "https://techblips.com/"
 languageCode = "en-us"
-title = "TechBlip"
+title = "TechBlips"
 theme = "PaperMod"
 [pagination]
   pagerSize = 10
 
 [params]
   env = "production"
-  description = "AI, tech trends, and the future — explained fast. New Claude updates, breakthrough tools, and the tech that matters."
+  description = "AI, tech trends, and the future — explained fast. Quick tech blips on Claude updates, breakthrough tools, and the tech that matters."
   author = "Henry"
   ShowReadingTime = true
   ShowShareButtons = true
@@ -21,8 +21,8 @@ theme = "PaperMod"
   disableThemeToggle = false
 
   [params.homeInfoParams]
-    Title = "TechBlip"
-    Content = "Your radar for AI breakthroughs, dev tools, and tech that actually matters. No fluff — just the signal."
+    Title = "TechBlips"
+    Content = "Quick blips on AI breakthroughs, dev tools, and tech that actually matters. No fluff — just the signal."
 
   [[params.socialIcons]]
     name = "rss"
