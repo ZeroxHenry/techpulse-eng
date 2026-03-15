@@ -4,6 +4,7 @@ date: 2026-03-14
 description: "Learn how to implement efficient object detection and tracking systems for autonomous robots. Optimize vision pipelines for edge computing constraints."
 slug: "real-time-object-detection-tracking-robotics-edge-optimization"
 draft: false
+schema: "Article"
 author: "Henry"
 categories:
   - "Artificial Intelligence"
@@ -675,3 +676,11 @@ Understanding **anchor-free detection** versus traditional bounding box approach
 Additional critical concepts include **inference acceleration**, leveraging specialized hardware for computational speedup, and **multi-scale feature extraction**, which captures objects at different sizes simultaneously. **Real-time constraints** define acceptable processing windows, typically measured in milliseconds. **Model pruning** and **knowledge distillation** represent optimization techniques reducing computational demands while maintaining detection reliability.
 
 These foundational concepts guide architectural decisions throughout the implementation process.
+
+## Related Articles
+
+- [PID Controller Tuning for Nonlinear Systems: Practical Guide](/posts/2026-03-14-pid-tuning-nonlinear-systems/)
+- [Robot Precision Manufacturing: Sub-0.1mm Tolerances Explained](/posts/2026-03-14-robot-precision-manufacturing-tolerances/)
+- [Robotic Precision Manufacturing: Sub-Millimeter Assembly](/posts/2026-03-14-robotic-precision-assembly-tolerances/)
+
+<!-- seo-optimized -->

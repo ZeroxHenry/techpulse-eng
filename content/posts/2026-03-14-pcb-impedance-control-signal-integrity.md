@@ -4,6 +4,7 @@ date: 2026-03-14
 description: "Master multi-layer PCB design for high-speed signals. Learn impedance control techniques, trace routing strategies, and signal integrity principles to eliminate timing failures and ensure reliable digital performance."
 slug: "pcb-impedance-control-signal-integrity"
 draft: false
+schema: "Article"
 author: "Henry"
 categories:
   - "Technology"
@@ -380,3 +381,11 @@ Your 4-week timeline becomes feasible when you preserve the lower-layer design a
 - No branded materials or trademarked terms introduced
 - Physics and calculations remain original and accurate
 - Maintained all technical depth while improving readability
+
+## Related Articles
+
+- [Real-Time Object Detection and Tracking in Robotics: Optimizing Computer Vision Pipelines for Edge Devices](/posts/2026-03-14-real-time-object-detection-tracking-robotics-edge-optimization/)
+- [Robot Precision Manufacturing: Sub-0.1mm Tolerances Explained](/posts/2026-03-14-robot-precision-manufacturing-tolerances/)
+- [Robotic Precision Manufacturing: Sub-Millimeter Assembly](/posts/2026-03-14-robotic-precision-assembly-tolerances/)
+
+<!-- seo-optimized -->

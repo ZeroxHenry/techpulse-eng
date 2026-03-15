@@ -4,6 +4,7 @@ date: 2026-03-14
 description: "Build production chatbots with free open-source LLMs instead of expensive paid alternatives. Learn how one engineer saved $2,400/month while maintaining quality and performance."
 slug: "open-source-llm-cost-savings"
 draft: false
+schema: "Article"
 author: "Henry"
 categories:
   - "Artificial Intelligence"
@@ -609,3 +610,5 @@ def measure_distributed_inference(model, batch, num_gpus):
 - [Getting Started with Arduino Servo Motors: A Practical Guide](/posts/getting-started-with-arduino-servo-motors/)
 - [Open-Source LLM Outperforms Proprietary Models on Speed](/posts/open-source-llm-speed-performance/)
 - [Open-Source LLM Inference: Speed vs Proprietary Models](/posts/open-source-llm-inference-speed/)
+
+<!-- seo-optimized -->

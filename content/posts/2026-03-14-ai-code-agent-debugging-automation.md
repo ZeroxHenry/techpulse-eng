@@ -4,6 +4,7 @@ date: 2026-03-14
 description: "Automate debugging workflows with AI code agents. Learn real techniques to cut troubleshooting time by 80%. See step-by-step setup and production examples."
 slug: "ai-code-agent-debugging-automation"
 draft: false
+schema: "Article"
 author: "Henry"
 categories:
   - "Artificial Intelligence"
@@ -556,3 +557,5 @@ Agent-assisted debugging is a *complement* to monitoring, not a replacement. You
 ## Related Articles
 
 - [Getting Started with Arduino Servo Motors: A Practical Guide](/posts/getting-started-with-arduino-servo-motors/)
+
+<!-- seo-optimized -->

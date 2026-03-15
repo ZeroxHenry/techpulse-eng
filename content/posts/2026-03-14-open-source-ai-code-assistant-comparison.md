@@ -4,6 +4,7 @@ date: 2026-03-14
 description: "I tested an open-source AI code assistant gaining traction with developers. See how it stacks up against paid alternatives in speed, accuracy, and cost for your workflow."
 slug: "open-source-ai-code-assistant-comparison"
 draft: false
+schema: "Article"
 author: "Henry"
 categories:
   - "Artificial Intelligence"
@@ -507,3 +508,5 @@ After 8 weeks of real work:
 - [Getting Started with Arduino Servo Motors: A Practical Guide](/posts/getting-started-with-arduino-servo-motors/)
 - [Open-Source LLM Inference: Speed vs Proprietary Models](/posts/open-source-llm-inference-speed/)
 - [Real-Time Object Detection and Tracking in Robotics: Optimizing Computer Vision Pipelines for Edge Devices](/posts/real-time-object-detection-tracking-robotics-edge-optimization/)
+
+<!-- seo-optimized -->

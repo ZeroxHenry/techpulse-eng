@@ -4,6 +4,7 @@ date: 2026-03-14
 description: "Real production experience with the hyped open-source ML framework. Discover critical issues, workarounds, and lessons learned building a full app in two weeks."
 slug: "open-source-ml-framework-production-issues"
 draft: false
+schema: "Article"
 author: "Henry"
 categories:
   - "Artificial Intelligence"
@@ -689,3 +690,5 @@ spec:
 - [Getting Started with Arduino Servo Motors: A Practical Guide](/posts/getting-started-with-arduino-servo-motors/)
 - [Automate Debugging with AI Code Agent — 80% Time Saved](/posts/automate-debugging-ai-code-agent/)
 - [Real-Time Object Detection and Tracking in Robotics: Optimizing Computer Vision Pipelines for Edge Devices](/posts/real-time-object-detection-tracking-robotics-edge-optimization/)
+
+<!-- seo-optimized -->

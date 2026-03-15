@@ -4,6 +4,7 @@ date: 2026-03-14
 description: "Robotic precision manufacturing just achieved sub-millimeter tolerances on complex assemblies. Discover how automated systems now match human-level quality control and reshape production efficiency."
 slug: "robotic-precision-assembly-tolerances"
 draft: false
+schema: "Article"
 author: "Henry"
 categories:
   - "Technology"
@@ -584,3 +585,5 @@ Here's the problem nobody talks about: you build a killer AI model that can pred
 - [Getting Started with Arduino Servo Motors: A Practical Guide](/posts/getting-started-with-arduino-servo-motors/)
 - [Real-Time Object Detection and Tracking in Robotics: Optimizing Computer Vision Pipelines for Edge Devices](/posts/real-time-object-detection-tracking-robotics-edge-optimization/)
 - [Open-Source LLM Inference: Speed vs Proprietary Models](/posts/open-source-llm-inference-speed/)
+
+<!-- seo-optimized -->

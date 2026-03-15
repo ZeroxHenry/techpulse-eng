@@ -4,6 +4,7 @@ date: 2026-03-14
 description: "Discover why AI agent frameworks are reshaping microservice orchestration. Learn how teams scaled autonomous agents across 47 services and avoided production chaos."
 slug: "ai-agent-framework-microservice-orchestration"
 draft: false
+schema: "Article"
 author: "Henry"
 categories:
   - "Artificial Intelligence"
@@ -663,3 +664,5 @@ class AgentEscalationHandler:
 - [Getting Started with Arduino Servo Motors: A Practical Guide](/posts/getting-started-with-arduino-servo-motors/)
 - [Automate Debugging with AI Code Agent — 80% Time Saved](/posts/automate-debugging-ai-code-agent/)
 - [AI Code Agent: Build Features Faster Than Direct Prompting](/posts/ai-code-agent-feature-development/)
+
+<!-- seo-optimized -->
