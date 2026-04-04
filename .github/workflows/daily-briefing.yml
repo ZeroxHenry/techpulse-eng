@@ -1,0 +1,58 @@
+name: Daily Morning Briefing
+
+on:
+  schedule:
+    - cron: "0 21 * * *" # 매일 06:00 KST (21:00 UTC 전날)
+  workflow_dispatch:
+
+jobs:
+  morning-briefing:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Generate morning briefing
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            You are the morning briefing assistant for techblips.com.
+
+            Do the following and create a GitHub Issue with the results:
+
+            1. Check recent commits on main branch (last 24h)
+            2. List any open PRs that need review
+            3. Check if any GitHub Actions failed recently
+            4. Suggest 1 small improvement task for today
+
+            Format the issue as:
+
+            Title: ☀️ Daily Briefing — YYYY-MM-DD
+
+            Body:
+            ## 밤새 변경사항
+            - (list commits from last 24h, or "없음")
+
+            ## 리뷰 대기 PR
+            - (list open PRs, or "없음")
+
+            ## 실패한 워크플로우
+            - (list failures, or "모두 정상")
+
+            ## 오늘의 추천 작업
+            - (1 small actionable task)
+
+            Keep it short. This is a daily check-in, not a report.
+
+      - name: Create Issue
+        uses: peter-evans/create-or-update-comment@v4
+        if: failure()
+        with:
+          issue-number: 1
+          body: "Daily briefing failed. Check workflow logs."
