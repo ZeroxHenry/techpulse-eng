@@ -18,7 +18,7 @@ jobs:
           submodules: true
 
       - name: Run Gemini content review
-        uses: google-github-actions/run-gemini-cli@v1
+        uses: google-github-actions/run-gemini-cli@v0
         with:
           prompt: |
             You are the content quality reviewer for techblips.com (Hugo + PaperMod).
