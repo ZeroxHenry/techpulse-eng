@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "notebooklm": {
+      "command": "uvx",
+      "args": ["--from", "notebooklm-mcp-cli", "notebooklm-mcp"],
+      "description": "NotebookLM MCP server - query notebooks for research directly from Claude Code"
+    }
+  }
+}
