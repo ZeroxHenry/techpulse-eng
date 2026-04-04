@@ -1,0 +1,61 @@
+name: Auto Review PRs
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: AI Review
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            You are the PR reviewer for techblips.com (Hugo + PaperMod).
+            Review this PR and add a comment with your findings.
+
+            Check for:
+            1. Hugo build compatibility (frontmatter format, template syntax)
+            2. Content quality (if .md files changed):
+               - Spelling/grammar issues
+               - Missing frontmatter fields (title, date, description, tags)
+               - Description over 160 characters
+               - AI-generated feel (generic phrases, robotic tone)
+            3. Code quality (if .js/.css/.html changed):
+               - Syntax errors
+               - Mobile responsiveness concerns
+               - Accessibility issues
+               - PaperMod theme compatibility
+            4. Data integrity (if .json files changed):
+               - Valid JSON structure
+               - Radar blip schema compliance
+               - data/ and static/data/ sync
+
+            Format your review as:
+
+            ## AI Review
+
+            ### Summary
+            (1-2 sentence overview)
+
+            ### Issues Found
+            - (list issues, or "None")
+
+            ### Suggestions
+            - (optional improvements)
+
+            ### Verdict
+            - LGTM / Needs attention / Needs fixes
+
+            Be concise. Focus on real problems, not style nitpicks.

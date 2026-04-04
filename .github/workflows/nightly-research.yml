@@ -1,0 +1,70 @@
+name: Nightly Tech Research
+
+on:
+  schedule:
+    - cron: "0 15 * * *" # 매일 00:00 KST (15:00 UTC 전날)
+  workflow_dispatch:
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Nightly tech research
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            You are the nightly research agent for techblips.com.
+
+            Your job: scan for interesting tech developments and prepare raw material
+            the human owner can review in the morning.
+
+            Steps:
+            1. Read content/posts/ to understand what topics are already covered
+            2. Read data/radar/2026-q2.json to know current radar blips
+            3. Think about what tech news from the last 24-48 hours would be
+               interesting for a developer audience (AI tools, cloud updates,
+               new frameworks, security incidents, developer productivity)
+            4. Create a research note file at data/research/YYYY-MM-DD.yaml with:
+               - 3-5 topic candidates with one-paragraph summaries
+               - Why each is relevant to the existing content
+               - Suggested angle (tutorial, opinion, news analysis, comparison)
+               - Which radar blips it relates to (if any)
+               - Estimated reader interest (high/medium/low)
+
+            YAML structure:
+            ```yaml
+            date: "YYYY-MM-DD"
+            topics:
+              - title: "Topic title"
+                summary: "One paragraph summary"
+                relevance: "Why this matters for techblips.com readers"
+                angle: "tutorial | opinion | news | comparison"
+                related_blips: ["blip1", "blip2"]
+                interest: "high | medium | low"
+                sources:
+                  - "source description"
+            ```
+
+            Create the data/research/ directory if it doesn't exist.
+            Only create the YAML file — do NOT write any blog posts.
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "research: nightly tech scan"
+          branch: research/${{ github.run_id }}
+          title: "[Research] Nightly scan — ${{ github.event.repository.updated_at }}"
+          body: |
+            ## Nightly Research
+
+            AI overnight research results. Review topics and pick
+            any worth developing into full posts or radar updates.
