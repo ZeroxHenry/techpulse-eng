@@ -22,9 +22,8 @@ theme = "PaperMod"
   disableThemeToggle = false
 
   [params.homeInfoParams]
-    Title = "⚡ TechBlips"
-    Content = """Your daily dose of AI updates, dev tool drops, and tech that's actually changing things.
-Written by Henry — no corporate fluff, just real takes on what matters in tech right now."""
+    Title = "The Pulse of Modern Engineering"
+    Content = "Deep dives into AI, high-performance infrastructure, and the tools shaping the future of software. No fluff, just the engineering that matters."
 
 
   [params.label]
@@ -46,35 +45,25 @@ Written by Henry — no corporate fluff, just real takes on what matters in tech
 
 [menu]
   [[menu.main]]
-    identifier = "ai"
-    name = "🤖 AI"
-    url = "/categories/artificial-intelligence/"
+    identifier = "home"
+    name = "Home"
+    url = "/"
     weight = 10
   [[menu.main]]
-    identifier = "devtools"
-    name = "🛠 Dev Tools"
-    url = "/categories/developer-tools/"
+    identifier = "blog"
+    name = "Blog"
+    url = "/posts/"
     weight = 20
   [[menu.main]]
-    identifier = "trending"
-    name = "🔥 Trending"
-    url = "/categories/technology/"
-    weight = 30
-  [[menu.main]]
     identifier = "radar"
-    name = "📡 Radar"
+    name = "Radar"
     url = "/radar/current/"
-    weight = 35
-  [[menu.main]]
-    identifier = "search"
-    name = "🔍 Search"
-    url = "/search/"
-    weight = 40
+    weight = 30
   [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 50
+    weight = 40
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

@@ -1,0 +1,16 @@
+{{- with .Site.Params.homeInfoParams }}
+<article class="home-info">
+    <header class="entry-header">
+        <h1>{{ .Title | markdownify }}</h1>
+    </header>
+    <div class="entry-content">
+        {{ .Content | markdownify }}
+    </div>
+    <footer class="entry-footer">
+        <div class="hero-buttons">
+            <a class="button primary" href="/posts/">Latest Posts</a>
+            <a class="button secondary" href="/radar/current/">Tech Radar</a>
+        </div>
+    </footer>
+</article>
+{{- end -}}
