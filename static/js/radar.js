@@ -42,6 +42,7 @@
       this.svg = null;
       this.tooltip = null;
       this.activeQuadrant = null;
+      this.activeRing = null;
       this.size = 0;
       this.center = 0;
       this.maxRadius = 0;
@@ -373,8 +374,16 @@
       });
     }
 
-    unhighlightQuadrant() {
-      if (this.activeQuadrant !== null) return;
+    highlightRing(index) {
+      this.svg.selectAll('.blip').each(function () {
+        const el = d3.select(this);
+        const isTarget = el.classed(`blip-r${index}`);
+        el.transition().duration(200).style('opacity', isTarget ? 1 : 0.2);
+      });
+    }
+
+    unhighlightAll() {
+      if (this.activeQuadrant !== null || this.activeRing !== null) return;
       this.svg.selectAll('.blip').transition().duration(200).style('opacity', 1);
       this.svg.selectAll('.quadrant-label').transition().duration(200).attr('opacity', 0.85);
     }
@@ -382,21 +391,61 @@
     toggleQuadrant(index) {
       if (this.activeQuadrant === index) {
         this.activeQuadrant = null;
-        this.unhighlightQuadrant();
+        if (this.activeRing !== null) {
+          this.highlightRing(this.activeRing);
+        } else {
+          this.unhighlightAll();
+        }
       } else {
         this.activeQuadrant = index;
+        this.activeRing = null; // mutually exclusive or combine? let's make it exclusive
         this.highlightQuadrant(index);
       }
-      this.updateBlipList(this.activeQuadrant);
+      this.updateBlipList();
+      this.syncFilterUI();
     }
 
-    updateBlipList(quadrantIndex) {
+    toggleRing(index) {
+      if (this.activeRing === index) {
+        this.activeRing = null;
+        if (this.activeQuadrant !== null) {
+          this.highlightQuadrant(this.activeQuadrant);
+        } else {
+          this.unhighlightAll();
+        }
+      } else {
+        this.activeRing = index;
+        this.activeQuadrant = null;
+        this.svg.selectAll('.quadrant-label').transition().duration(200).attr('opacity', 0.85);
+        this.highlightRing(index);
+      }
+      this.updateBlipList();
+      this.syncFilterUI();
+    }
+
+    syncFilterUI() {
+      document.querySelectorAll('.radar-filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (this.activeQuadrant === null && this.activeRing === null && btn.dataset.quadrant === 'all') {
+          btn.classList.add('active');
+        } else if (this.activeQuadrant !== null && btn.dataset.quadrant === String(this.activeQuadrant)) {
+          btn.classList.add('active');
+        } else if (this.activeRing !== null && btn.dataset.ring === String(this.activeRing)) {
+          btn.classList.add('active');
+        }
+      });
+    }
+
+    updateBlipList() {
       const listEl = document.getElementById('radar-blip-list');
       if (!listEl) return;
 
-      const blips = quadrantIndex !== null
-        ? this.data.blips.filter(b => b.quadrant === quadrantIndex)
-        : this.data.blips;
+      let blips = this.data.blips;
+      if (this.activeQuadrant !== null) {
+        blips = blips.filter(b => b.quadrant === this.activeQuadrant);
+      } else if (this.activeRing !== null) {
+        blips = blips.filter(b => b.ring === this.activeRing);
+      }
 
       const grouped = {};
       CONFIG.rings.forEach((r, i) => { grouped[i] = []; });
@@ -463,7 +512,24 @@
     const radar = new TechRadar('tech-radar', dataUrl);
     radar.init().then(() => {
       // Populate initial blip list
-      radar.updateBlipList(null);
+      radar.updateBlipList();
+      
+      // Wire up UI buttons
+      document.querySelectorAll('.radar-filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          if (this.dataset.quadrant === 'all') {
+            radar.activeQuadrant = null;
+            radar.activeRing = null;
+            radar.unhighlightAll();
+            radar.updateBlipList();
+            radar.syncFilterUI();
+          } else if (this.dataset.quadrant !== undefined) {
+            radar.toggleQuadrant(parseInt(this.dataset.quadrant, 10));
+          } else if (this.dataset.ring !== undefined) {
+            radar.toggleRing(parseInt(this.dataset.ring, 10));
+          }
+        });
+      });
     });
   });
 })();

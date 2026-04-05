@@ -18,6 +18,11 @@
     <button class="radar-filter-btn" data-quadrant="1" style="--btn-color: #0ea5e9">Cloud &amp; Infra</button>
     <button class="radar-filter-btn" data-quadrant="2" style="--btn-color: #f59e0b">Dev Tools</button>
     <button class="radar-filter-btn" data-quadrant="3" style="--btn-color: #10b981">Platforms &amp; APIs</button>
+    <span style="border-left: 1px solid var(--border-light); margin: 0 4px; height: 20px;"></span>
+    <button class="radar-filter-btn" data-ring="0">Adopt</button>
+    <button class="radar-filter-btn" data-ring="1">Trial</button>
+    <button class="radar-filter-btn" data-ring="2">Assess</button>
+    <button class="radar-filter-btn" data-ring="3">Hold</button>
   </div>
 
   <div class="radar-container">
@@ -31,13 +36,4 @@
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="/js/radar.js"></script>
-<script>
-  // Quadrant filter buttons
-  document.querySelectorAll('.radar-filter-btn').forEach(btn => {
-    btn.addEventListener('click', function() {
-      document.querySelectorAll('.radar-filter-btn').forEach(b => b.classList.remove('active'));
-      this.classList.add('active');
-    });
-  });
-</script>
 {{ end }}
