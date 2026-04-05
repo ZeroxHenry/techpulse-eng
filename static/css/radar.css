@@ -23,6 +23,7 @@
 .radar-svg {
   width: 100%;
   height: auto;
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -281,6 +282,20 @@
   border-color: var(--accent, #6c5ce7);
   color: var(--accent, #6c5ce7);
   background: var(--accent-bg, rgba(108, 92, 231, 0.06));
+}
+
+.radar-filter-q0.active, .radar-filter-q0:hover { border-color: #6c5ce7; color: #6c5ce7; background: rgba(108,92,231,0.06); }
+.radar-filter-q1.active, .radar-filter-q1:hover { border-color: #0ea5e9; color: #0ea5e9; background: rgba(14,165,233,0.06); }
+.radar-filter-q2.active, .radar-filter-q2:hover { border-color: #f59e0b; color: #f59e0b; background: rgba(245,158,11,0.06); }
+.radar-filter-q3.active, .radar-filter-q3:hover { border-color: #10b981; color: #10b981; background: rgba(16,185,129,0.06); }
+
+.radar-filter-divider {
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  background: var(--border-light, #e8ecf1);
+  margin: 0 4px;
+  align-self: center;
 }
 
 /* --- Blip Detail Page --- */

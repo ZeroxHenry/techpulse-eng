@@ -65,8 +65,8 @@ main {
 /* --- Navigation --- */
 .nav {
   background: rgba(255, 255, 255, 0.85) !important;
-  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-light);
   padding: 0.8rem 0;
 }
@@ -528,25 +528,174 @@ main {
 /* --- Responsive --- */
 @media (max-width: 860px) {
   .home-info h1, .first-entry h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .home-info, .first-entry {
     padding: 3rem 1.5rem;
   }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero-buttons .button {
+    text-align: center;
+  }
+  .post-single {
+    padding: 0 1rem;
+  }
+  #menu {
+    gap: 1rem;
+  }
+  #menu a {
+    font-size: 0.85rem;
+  }
 }
 
-/* --- Progress Bar --- */
+/* --- Progress Bar (JS-driven, broad browser support) --- */
 .progress-bar {
   position: fixed;
-  top: 0; left: 0; right: 0;
-  height: 4px;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
   z-index: 9999;
-  background: var(--accent);
-  transform-origin: 0%;
-  transform: scaleX(0);
-  animation: scrollProgress linear;
-  animation-timeline: scroll(root block);
+  background: linear-gradient(90deg, var(--accent), #0ea5e9);
+  transition: width 0.1s linear;
+  pointer-events: none;
 }
-@keyframes scrollProgress {
-  to { transform: scaleX(1); }
+
+/* --- 404 Page --- */
+.not-found-container {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.not-found-code {
+  font-size: 8rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--accent), #0ea5e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.not-found-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.not-found-desc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 480px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+
+.not-found-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* --- Search Page --- */
+#searchbox input {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-light);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+#searchbox input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+}
+
+/* --- Tags & Categories --- */
+.tags-list, .categories-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.tags-list li a, .categories-list li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s var(--transition);
+}
+
+.tags-list li a:hover, .categories-list li a:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.2);
+}
+
+/* --- Dark Mode: Complete Coverage --- */
+[data-theme=dark] .post-entry:hover {
+  box-shadow: 0 20px 40px -12px rgba(129, 140, 248, 0.15);
+}
+
+[data-theme=dark] .pagination a,
+[data-theme=dark] .pagination span {
+  background: var(--bg-card);
+  border-color: var(--border-light);
+  color: var(--text-secondary);
+}
+
+[data-theme=dark] #searchbox input {
+  background: var(--bg-card);
+  border-color: var(--border-light);
+  color: var(--text-primary);
+}
+
+[data-theme=dark] .tags-list li a,
+[data-theme=dark] .categories-list li a {
+  background: var(--bg-card);
+  border-color: var(--border-light);
+  color: var(--text-secondary);
+}
+
+[data-theme=dark] .author-card {
+  background: var(--bg-card);
+  border-color: var(--border-light);
+}
+
+/* Smooth theme toggle transitions */
+body,
+.nav,
+.post-entry,
+.author-card,
+.home-info,
+.first-entry {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }

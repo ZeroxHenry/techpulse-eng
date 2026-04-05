@@ -9,23 +9,24 @@ ShowBreadCrumbs: false
 
 ## Hey, I'm Henry.
 
-I started TechBlips because I was tired of tech news that's either too shallow or buried in jargon nobody asked for.
+I'm an engineer who can't stop reading changelogs.
 
-I'm an engineer who spends way too much time testing new AI tools, reading changelogs, and digging into tech that most people won't hear about until months later. So I figured — why not share what I find?
+TechBlips is where I process what I find — AI model updates, infrastructure patterns, developer tooling shifts, and the occasional piece of hardware that makes me rethink what's possible. No editorial team, no content strategy. Just things I genuinely think are worth understanding.
 
-### What You'll Find Here
+### What I write about
 
-- **AI & LLM Updates** — Claude, GPT, open-source models. What changed, why it matters, and how to actually use it.
-- **Dev Tools & Frameworks** — The tools that are quietly changing how we build things.
-- **Tech Deep-Dives** — When something interesting drops, I break it down so you don't have to read 50 pages of docs.
-- **Engineering Insights** — Robotics, embedded systems, and the hardware side of tech that often gets overlooked.
+**AI & LLMs** — Model releases, capability shifts, and what they actually mean for building things. I try to skip the hype and get to the part that matters.
 
-### The Philosophy
+**Infrastructure & Cloud** — The systems that keep software running at scale. Worth understanding even if it's not your day job.
 
-No fluff. No "In today's rapidly evolving landscape" garbage. Just the signal.
+**Developer Tools** — The ones that are quietly changing how teams build. Not the ones that just have good landing pages.
 
-If a new Claude model drops at 3 AM, you'll find the breakdown here before your morning coffee.
+**Embedded & Hardware** — Underreported and underrated. The physical layer of the tech stack.
 
-### Contact
+### The format
 
-Want to suggest a topic or just say hi? Drop a comment on any post.
+Short when the topic is simple. Long when it's not. I don't pad for word count.
+
+### Say hi
+
+Drop a comment on any post, or find me wherever engineers tend to congregate online.
