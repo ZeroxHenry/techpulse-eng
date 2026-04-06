@@ -1,6 +1,6 @@
 import { getAllPosts } from '@/lib/posts';
 
-const BASE_URL = 'https://techblips.com';
+const BASE_URL = 'https://0xhenry.dev';
 
 export async function GET() {
   const posts = getAllPosts('ko');

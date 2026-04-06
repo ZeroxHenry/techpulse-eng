@@ -10,7 +10,7 @@ interface ShareButtonsProps {
 
 export default function ShareButtons({ title, slug, lang }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
-  const url = `https://techblips.com/${lang}/study/${slug}`;
+  const url = `https://0xhenry.dev/${lang}/study/${slug}`;
 
   const share = (href: string) => {
     window.open(href, '_blank', 'noopener,noreferrer,width=600,height=400');

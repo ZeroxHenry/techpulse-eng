@@ -7,11 +7,11 @@ export const metadata: Metadata = {
     template: '%s | StackPulse',
   },
   description: 'Engineer Study — learning real tech from scratch.',
-  metadataBase: new URL('https://techblips.com'),
+  metadataBase: new URL('https://0xhenry.dev'),
   openGraph: {
     title: 'StackPulse',
     description: 'Engineer Study — learning real tech from scratch.',
-    url: 'https://techblips.com',
+    url: 'https://0xhenry.dev',
     siteName: 'StackPulse',
     type: 'website',
     images: [
