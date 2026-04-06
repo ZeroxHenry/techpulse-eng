@@ -3,37 +3,37 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'TechBlips',
-    template: '%s | TechBlips',
+    default: 'StackPulse',
+    template: '%s | StackPulse',
   },
   description: 'Engineer Study — learning real tech from scratch.',
   metadataBase: new URL('https://techblips.com'),
   openGraph: {
-    title: 'TechBlips',
+    title: 'StackPulse',
     description: 'Engineer Study — learning real tech from scratch.',
     url: 'https://techblips.com',
-    siteName: 'TechBlips',
+    siteName: 'StackPulse',
     type: 'website',
     images: [
       {
         url: '/og-default.png',
         width: 1200,
         height: 630,
-        alt: 'TechBlips - Engineer Study',
+        alt: 'StackPulse - Engineer Study',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TechBlips',
+    title: 'StackPulse',
     description: 'Engineer Study — learning real tech from scratch.',
     images: ['/og-default.png'],
   },
   alternates: {
     types: {
       'application/rss+xml': [
-        { url: '/feed.xml', title: 'TechBlips RSS (EN)' },
-        { url: '/ko/feed.xml', title: 'TechBlips RSS (KO)' },
+        { url: '/feed.xml', title: 'StackPulse RSS (EN)' },
+        { url: '/ko/feed.xml', title: 'StackPulse RSS (KO)' },
       ],
     },
   },

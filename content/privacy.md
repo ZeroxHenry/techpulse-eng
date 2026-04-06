@@ -11,7 +11,7 @@ ShowBreadCrumbs: false
 
 **Last updated:** March 14, 2026
 
-TechBlips ("we", "us", or "our") operates this website.
+StackPulse ("we", "us", or "our") operates this website.
 
 ### Information We Collect
 

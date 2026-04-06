@@ -23,7 +23,7 @@ export default async function LangLayout({
       <main className="flex-1">{children}</main>
       <footer className="border-t border-gray-200 dark:border-gray-800 py-8 text-center text-sm text-gray-500">
         <div className="max-w-5xl mx-auto px-5">
-          &copy; {new Date().getFullYear()} TechBlips. Built by Henry.
+          &copy; {new Date().getFullYear()} StackPulse. Built by Henry.
         </div>
       </footer>
     </Providers>

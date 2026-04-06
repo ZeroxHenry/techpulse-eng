@@ -17,7 +17,7 @@ export default function LoginPage() {
           <button
             onClick={() => signIn('google', { callbackUrl: `/${lang}` })}
             className="flex items-center justify-center gap-3 w-full rounded-lg px-4 py-3 text-sm font-semibold text-white transition-colors"
-            style={{ backgroundColor: 'var(--accent, #6c5ce7)' }}
+            style={{ backgroundColor: 'var(--accent, #0d9488)' }}
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
               <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" />

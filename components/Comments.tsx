@@ -50,7 +50,7 @@ function Avatar({ user }: { user: CommentUser }) {
   return (
     <div
       className="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium text-white"
-      style={{ backgroundColor: 'var(--accent, #6c5ce7)' }}
+      style={{ backgroundColor: 'var(--accent, #0d9488)' }}
     >
       {fallback}
     </div>
@@ -90,8 +90,8 @@ function CommentItem({
       <div
         className="rounded-lg p-4"
         style={{
-          borderLeft: '3px solid var(--accent, #6c5ce7)',
-          backgroundColor: isReply ? 'rgba(108, 92, 231, 0.03)' : 'rgba(108, 92, 231, 0.05)',
+          borderLeft: '3px solid var(--accent, #0d9488)',
+          backgroundColor: isReply ? 'rgba(13, 148, 136, 0.03)' : 'rgba(13, 148, 136, 0.05)',
         }}
       >
         <div className="flex items-center gap-3 mb-2">
@@ -112,7 +112,7 @@ function CommentItem({
           <button
             onClick={() => setShowReplyForm(!showReplyForm)}
             className="text-xs mt-2 hover:underline"
-            style={{ color: 'var(--accent, #6c5ce7)' }}
+            style={{ color: 'var(--accent, #0d9488)' }}
           >
             {showReplyForm ? 'Cancel' : 'Reply'}
           </button>
@@ -127,13 +127,13 @@ function CommentItem({
             placeholder="Write a reply..."
             rows={2}
             className="w-full rounded-md border border-gray-300 p-2 text-sm focus:outline-none"
-            style={{ borderColor: 'var(--accent, #6c5ce7)' }}
+            style={{ borderColor: 'var(--accent, #0d9488)' }}
           />
           <button
             onClick={handleReply}
             disabled={submitting || !replyContent.trim()}
             className="mt-1 px-3 py-1 rounded text-white text-sm disabled:opacity-50"
-            style={{ backgroundColor: 'var(--accent, #6c5ce7)' }}
+            style={{ backgroundColor: 'var(--accent, #0d9488)' }}
           >
             {submitting ? 'Posting...' : 'Post Reply'}
           </button>
@@ -211,7 +211,7 @@ export default function Comments({ slug, lang }: { slug: string; lang: string })
     <section className="mt-12">
       <h2
         className="text-xl font-bold mb-6 pb-2 border-b-2"
-        style={{ borderColor: 'var(--accent, #6c5ce7)' }}
+        style={{ borderColor: 'var(--accent, #0d9488)' }}
       >
         Comments
       </h2>
@@ -225,14 +225,14 @@ export default function Comments({ slug, lang }: { slug: string; lang: string })
             rows={3}
             className="w-full rounded-lg border p-3 text-sm focus:outline-none focus:ring-2"
             style={{
-              borderColor: 'var(--accent, #6c5ce7)',
+              borderColor: 'var(--accent, #0d9488)',
             }}
           />
           <button
             onClick={handleSubmit}
             disabled={submitting || !content.trim()}
             className="mt-2 px-4 py-2 rounded-lg text-white text-sm font-medium disabled:opacity-50 transition-opacity"
-            style={{ backgroundColor: 'var(--accent, #6c5ce7)' }}
+            style={{ backgroundColor: 'var(--accent, #0d9488)' }}
           >
             {submitting ? 'Posting...' : 'Post Comment'}
           </button>
@@ -241,14 +241,14 @@ export default function Comments({ slug, lang }: { slug: string; lang: string })
         <div
           className="mb-8 rounded-lg p-4 text-center text-sm"
           style={{
-            border: '1px dashed var(--accent, #6c5ce7)',
-            backgroundColor: 'rgba(108, 92, 231, 0.05)',
+            border: '1px dashed var(--accent, #0d9488)',
+            backgroundColor: 'rgba(13, 148, 136, 0.05)',
           }}
         >
           <a
             href={`/${lang}/login`}
             className="font-medium hover:underline"
-            style={{ color: 'var(--accent, #6c5ce7)' }}
+            style={{ color: 'var(--accent, #0d9488)' }}
           >
             Sign in to comment
           </a>
