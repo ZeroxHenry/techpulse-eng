@@ -22,7 +22,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
-            You are the nightly research agent for techblips.com.
+            You are the nightly research agent for 0xhenry.dev.
 
             Your job: scan for interesting tech developments and prepare raw material
             the human owner can review in the morning.
@@ -46,7 +46,7 @@ jobs:
             topics:
               - title: "Topic title"
                 summary: "One paragraph summary"
-                relevance: "Why this matters for techblips.com readers"
+                relevance: "Why this matters for 0xhenry.dev readers"
                 angle: "tutorial | opinion | news | comparison"
                 related_blips: ["blip1", "blip2"]
                 interest: "high | medium | low"

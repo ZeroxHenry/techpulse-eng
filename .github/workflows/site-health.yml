@@ -40,7 +40,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
-            You are the site health checker for techblips.com (Hugo + PaperMod).
+            You are the site health checker for 0xhenry.dev (Hugo + PaperMod).
 
             Check the following and create a GitHub Issue:
 

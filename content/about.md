@@ -2,7 +2,7 @@
 title: "About"
 layout: "single"
 url: "/about/"
-summary: "About StackPulse"
+summary: "About 0xHenry"
 ShowToc: false
 ShowBreadCrumbs: false
 ---
@@ -11,7 +11,7 @@ ShowBreadCrumbs: false
 
 I'm an engineer who learns by building.
 
-StackPulse started as a tech blog, but I realized something: the internet doesn't need more AI-generated summaries. It needs real people documenting real learning.
+0xHenry started as a tech blog, but I realized something: the internet doesn't need more AI-generated summaries. It needs real people documenting real learning.
 
 ### What this is now
 

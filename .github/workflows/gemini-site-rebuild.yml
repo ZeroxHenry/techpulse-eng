@@ -71,7 +71,7 @@ jobs:
       - name: Push changes
         run: |
           git config user.name "gemini-bot"
-          git config user.email "gemini-bot@techblips.com"
+          git config user.email "gemini-bot@0xhenry.dev"
           git add -A
           git diff --cached --quiet && echo "No changes" || (git commit -m "redesign: post detail pages (Task 2)" && git push)
 
@@ -124,7 +124,7 @@ jobs:
       - name: Push changes
         run: |
           git config user.name "gemini-bot"
-          git config user.email "gemini-bot@techblips.com"
+          git config user.email "gemini-bot@0xhenry.dev"
           git add -A
           git diff --cached --quiet && echo "No changes" || (git commit -m "redesign: radar page (Task 3)" && git push)
 
@@ -154,7 +154,7 @@ jobs:
             DO THIS NOW — TASK 4: About Page + Site Polish
 
             1. content/about.md: rewrite professionally
-               - TechBlips intro: AI & tech trends media
+               - 0xHenry intro: AI & tech trends media
                - Henry intro: brief
                - Site purpose and value
                - Contact section
@@ -173,7 +173,7 @@ jobs:
       - name: Push changes
         run: |
           git config user.name "gemini-bot"
-          git config user.email "gemini-bot@techblips.com"
+          git config user.email "gemini-bot@0xhenry.dev"
           git add -A
           git diff --cached --quiet && echo "No changes" || (git commit -m "redesign: about page + polish (Task 4)" && git push)
 
@@ -225,6 +225,6 @@ jobs:
       - name: Push changes
         run: |
           git config user.name "gemini-bot"
-          git config user.email "gemini-bot@techblips.com"
+          git config user.email "gemini-bot@0xhenry.dev"
           git add -A
           git diff --cached --quiet && echo "No changes" || (git commit -m "redesign: dark mode + responsive QA (Task 5)" && git push)

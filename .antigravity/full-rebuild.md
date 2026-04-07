@@ -1,4 +1,4 @@
-# AG 작업 매뉴얼 — TechBlips 전체 자동화 순서
+# AG 작업 매뉴얼 — 0xHenry 전체 자동화 순서
 
 ## 사용법
 1. Antigravity 열기
@@ -12,7 +12,7 @@
 # 세션 1: 사이트 디자인 전면 리뉴얼
 
 ```
-이 레포는 techblips.com — Hugo + PaperMod 기반 테크 블로그야.
+이 레포는 0xhenry.dev — Hugo + PaperMod 기반 테크 블로그야.
 GEMINI.md 파일을 먼저 읽고 모든 규칙을 따라.
 main 브랜치에서 작업. 완료되면 바로 commit + push.
 Cloudflare Pages가 main push 감지해서 자동 배포.

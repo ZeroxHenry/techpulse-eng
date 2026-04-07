@@ -22,7 +22,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
-            You are the morning briefing assistant for techblips.com.
+            You are the morning briefing assistant for 0xhenry.dev.
 
             Do the following and create a GitHub Issue with the results:
 

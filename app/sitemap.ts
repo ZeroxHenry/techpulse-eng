@@ -2,7 +2,7 @@ import type { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/posts';
 import { locales } from '@/lib/i18n';
 
-const BASE_URL = 'https://techblips.com';
+const BASE_URL = 'https://0xhenry.dev';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];

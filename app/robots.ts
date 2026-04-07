@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://techblips.com/sitemap.xml',
+    sitemap: 'https://0xhenry.dev/sitemap.xml',
   };
 }

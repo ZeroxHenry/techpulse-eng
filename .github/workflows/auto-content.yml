@@ -24,7 +24,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
-            You are writing a blog post for TechBlips (techblips.com).
+            You are writing a blog post for 0xHenry (0xhenry.dev).
             Author: Henry. Style: conversational, opinionated, developer-focused.
 
             STRICT RULES - DO NOT violate these:

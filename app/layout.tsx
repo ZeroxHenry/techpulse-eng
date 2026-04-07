@@ -3,37 +3,37 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: 'StackPulse',
-    template: '%s | StackPulse',
+    default: '0xHenry',
+    template: '%s | 0xHenry',
   },
   description: 'Engineer Study — learning real tech from scratch.',
-  metadataBase: new URL('https://techblips.com'),
+  metadataBase: new URL('https://0xhenry.dev'),
   openGraph: {
-    title: 'StackPulse',
+    title: '0xHenry',
     description: 'Engineer Study — learning real tech from scratch.',
-    url: 'https://techblips.com',
-    siteName: 'StackPulse',
+    url: 'https://0xhenry.dev',
+    siteName: '0xHenry',
     type: 'website',
     images: [
       {
         url: '/og-default.png',
         width: 1200,
         height: 630,
-        alt: 'StackPulse - Engineer Study',
+        alt: '0xHenry - Engineer Study',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'StackPulse',
+    title: '0xHenry',
     description: 'Engineer Study — learning real tech from scratch.',
     images: ['/og-default.png'],
   },
   alternates: {
     types: {
       'application/rss+xml': [
-        { url: '/feed.xml', title: 'StackPulse RSS (EN)' },
-        { url: '/ko/feed.xml', title: 'StackPulse RSS (KO)' },
+        { url: '/feed.xml', title: '0xHenry RSS (EN)' },
+        { url: '/ko/feed.xml', title: '0xHenry RSS (KO)' },
       ],
     },
   },

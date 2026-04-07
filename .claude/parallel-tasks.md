@@ -1,4 +1,4 @@
-# TechBlips 병렬 작업 분배
+# 0xHenry 병렬 작업 분배
 
 ## 작업 현황
 - main 브랜치: AI 마커 제거 + CI/CD 완료 (PR #1 머지됨)
@@ -15,7 +15,7 @@ base: `claude/radar-mvp-4pJNg`
 ### 프롬프트 (복사해서 붙여넣기):
 
 ```
-이 레포는 techblips.com — Hugo + PaperMod 기반 테크 미디어 사이트야.
+이 레포는 0xhenry.dev — Hugo + PaperMod 기반 테크 미디어 사이트야.
 /data/radar/2026-q2.json 에 30개 기술 블립 데이터가 있어.
 /content/radar/blips/ 에 5개(claude-code, cloudflare-workers, rag-pipelines, supabase, hono) 상세 페이지가 이미 있어.
 
@@ -47,7 +47,7 @@ base: `claude/radar-mvp-4pJNg`
 ### 프롬프트 (복사해서 붙여넣기):
 
 ```
-이 레포는 techblips.com — Hugo 기반 테크 미디어 사이트야.
+이 레포는 0xhenry.dev — Hugo 기반 테크 미디어 사이트야.
 현재 .github/workflows/auto-content.yml 이 있는데, 이건 AI가 자동으로 글을 생성해서 
 바로 PR을 만드는 방식이야. 이걸 human-in-the-loop 방식으로 교체해야 해.
 
@@ -84,7 +84,7 @@ base: `claude/radar-mvp-4pJNg`
 ### 프롬프트 (복사해서 붙여넣기):
 
 ```
-이 레포는 techblips.com — Hugo 기반 테크 미디어 사이트야.
+이 레포는 0xhenry.dev — Hugo 기반 테크 미디어 사이트야.
 /content/posts/ 에 19개 블로그 포스트가 있어.
 /data/radar/2026-q2.json 에 30개 Tech Radar 블립이 있어.
 

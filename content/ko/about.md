@@ -2,7 +2,7 @@
 title: "소개"
 layout: "single"
 url: "/ko/about/"
-summary: "StackPulse 소개"
+summary: "0xHenry 소개"
 ShowToc: false
 ShowBreadCrumbs: false
 ---
@@ -11,7 +11,7 @@ ShowBreadCrumbs: false
 
 직접 만들면서 배우는 엔지니어입니다.
 
-StackPulse는 원래 테크 블로그로 시작했지만 깨달았습니다 — 인터넷에 AI가 만든 요약글은 이미 넘쳐납니다. 진짜 필요한 건 실제로 공부하는 사람의 기록입니다.
+0xHenry는 원래 테크 블로그로 시작했지만 깨달았습니다 — 인터넷에 AI가 만든 요약글은 이미 넘쳐납니다. 진짜 필요한 건 실제로 공부하는 사람의 기록입니다.
 
 ### 지금은 이렇게 합니다
 

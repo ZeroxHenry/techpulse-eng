@@ -2,7 +2,7 @@
 
 ## Every session start (required)
 ```
-This repo is techblips.com — a Hugo + PaperMod tech blog and radar platform.
+This repo is 0xhenry.dev — a Hugo + PaperMod tech blog and radar platform.
 Read GEMINI.md first and follow all rules.
 Work on main branch. Commit + push when done.
 Cloudflare Pages auto-deploys on main push.

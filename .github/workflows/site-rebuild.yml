@@ -40,7 +40,7 @@ jobs:
           prompt: |
             Read GEMINI.md first. Follow all rules.
 
-            You are redesigning techblips.com (Hugo + PaperMod).
+            You are redesigning 0xhenry.dev (Hugo + PaperMod).
             Design reference: Vercel Blog, Linear Blog, Raycast Blog.
             Colors: #6c5ce7 (purple), #0ea5e9 (blue), #f59e0b (amber), #10b981 (green)
             Font: Inter (already loaded)
@@ -77,7 +77,7 @@ jobs:
       - name: Push changes
         run: |
           git config user.name "claude-bot"
-          git config user.email "claude-bot@techblips.com"
+          git config user.email "claude-bot@0xhenry.dev"
           git add -A
           git diff --cached --quiet && echo "No changes" || (git commit -m "redesign: homepage + navigation (Task 1)" && git push)
 
@@ -138,7 +138,7 @@ jobs:
       - name: Push changes
         run: |
           git config user.name "claude-bot"
-          git config user.email "claude-bot@techblips.com"
+          git config user.email "claude-bot@0xhenry.dev"
           git add -A
           git diff --cached --quiet && echo "No changes" || (git commit -m "redesign: post detail pages (Task 2)" && git push)
 
@@ -192,7 +192,7 @@ jobs:
       - name: Push changes
         run: |
           git config user.name "claude-bot"
-          git config user.email "claude-bot@techblips.com"
+          git config user.email "claude-bot@0xhenry.dev"
           git add -A
           git diff --cached --quiet && echo "No changes" || (git commit -m "redesign: radar page (Task 3)" && git push)
 
@@ -224,7 +224,7 @@ jobs:
             DO THIS NOW — TASK 4: About Page + Site Polish
 
             1. content/about.md: rewrite professionally
-               - TechBlips intro: AI & tech trends media
+               - 0xHenry intro: AI & tech trends media
                - Henry intro: brief
                - Site purpose and value
                - Contact section
@@ -242,7 +242,7 @@ jobs:
       - name: Push changes
         run: |
           git config user.name "claude-bot"
-          git config user.email "claude-bot@techblips.com"
+          git config user.email "claude-bot@0xhenry.dev"
           git add -A
           git diff --cached --quiet && echo "No changes" || (git commit -m "redesign: about page + polish (Task 4)" && git push)
 
@@ -295,6 +295,6 @@ jobs:
       - name: Push changes
         run: |
           git config user.name "claude-bot"
-          git config user.email "claude-bot@techblips.com"
+          git config user.email "claude-bot@0xhenry.dev"
           git add -A
           git diff --cached --quiet && echo "No changes" || (git commit -m "redesign: dark mode + responsive QA (Task 5)" && git push)

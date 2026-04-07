@@ -29,7 +29,7 @@ jobs:
         uses: google-github-actions/run-gemini-cli@v0
         with:
           prompt: |
-            You are the design polish agent for techblips.com (Hugo + PaperMod).
+            You are the design polish agent for 0xhenry.dev (Hugo + PaperMod).
             Read GEMINI.md for all project rules and file structure.
 
             This week's design tasks (pick 2-3 and do them well):

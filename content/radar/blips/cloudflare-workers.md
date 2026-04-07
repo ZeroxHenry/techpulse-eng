@@ -34,4 +34,4 @@ Sub-millisecond cold starts eliminate the serverless "cold start tax" that plagu
 
 ## Our take
 
-We run TechBlips entirely on Cloudflare's stack — Pages for static content, Workers for API endpoints. For small-to-medium applications that need global performance without DevOps overhead, this is the strongest option available. The ecosystem maturity crossed our comfort threshold for production use in late 2025.
+We run 0xHenry entirely on Cloudflare's stack — Pages for static content, Workers for API endpoints. For small-to-medium applications that need global performance without DevOps overhead, this is the strongest option available. The ecosystem maturity crossed our comfort threshold for production use in late 2025.

@@ -11,7 +11,7 @@ ShowBreadCrumbs: false
 
 **Last updated:** March 14, 2026
 
-StackPulse ("we", "us", or "our") operates this website.
+0xHenry ("we", "us", or "our") operates this website.
 
 ### Information We Collect
 

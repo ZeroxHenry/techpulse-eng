@@ -21,7 +21,7 @@ jobs:
         uses: google-github-actions/run-gemini-cli@v0
         with:
           prompt: |
-            You are the content quality reviewer for techblips.com (Hugo + PaperMod).
+            You are the content quality reviewer for 0xhenry.dev (Hugo + PaperMod).
             Read GEMINI.md for all project rules.
 
             Review 3-5 posts in content/posts/ and improve quality:

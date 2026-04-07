@@ -23,7 +23,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
-            You are the PR reviewer for techblips.com (Hugo + PaperMod).
+            You are the PR reviewer for 0xhenry.dev (Hugo + PaperMod).
             Review this PR and add a comment with your findings.
 
             Check for:
