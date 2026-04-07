@@ -30,13 +30,23 @@ This post is everything I learned in that month so nobody else has to repeat it.
 | **ZED SDK** | 5.2.1 |
 | **ZED Link** | 1.4.0-L4T36.4.0 |
 
-Three commands. That's it:
+Installation steps:
 
 ```bash
-sudo apt install zed-link
-sudo apt install zed-sdk
-zed-explorer
+# 1. Install ZED Link driver (GMSL2 deserializer)
+chmod +x ZED_Link_Driver_L4T36.4.0_v1.4.0.run
+sudo ./ZED_Link_Driver_L4T36.4.0_v1.4.0.run
+sudo reboot
+
+# 2. Install ZED SDK
+chmod +x ZED_SDK_Tegra_L4T36.4_v5.2.1.zstd.run
+./ZED_SDK_Tegra_L4T36.4_v5.2.1.zstd.run
+
+# 3. Verify camera
+/usr/local/zed/tools/ZED_Explorer
 ```
+
+> Download the `.run` installers from Stereolabs matching your JetPack version. This is NOT `apt install`.
 
 If you're seeing live depth video right now — congratulations, you're done. Close this tab.
 
@@ -145,12 +155,20 @@ sudo i2cdetect -y -r 9
 
 **Addresses visible.** `0x2d` and `0x30 (UU)` — that's the GMSL2 deserializer. The camera exists on the bus.
 
-Three installs later:
+Install:
 
 ```bash
-sudo apt install zed-link        # GMSL2 driver
-sudo apt install zed-sdk          # Camera SDK + CUDA depth engine  
-zed-explorer                      # Live camera feed
+# ZED Link driver (GMSL2)
+chmod +x ZED_Link_Driver_L4T36.4.0_v1.4.0.run
+sudo ./ZED_Link_Driver_L4T36.4.0_v1.4.0.run
+sudo reboot
+
+# ZED SDK
+chmod +x ZED_SDK_Tegra_L4T36.4_v5.2.1.zstd.run
+./ZED_SDK_Tegra_L4T36.4_v5.2.1.zstd.run
+
+# Live camera feed
+/usr/local/zed/tools/ZED_Explorer
 ```
 
 Depth map, point cloud, everything — first try.
