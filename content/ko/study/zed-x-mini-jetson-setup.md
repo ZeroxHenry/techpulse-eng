@@ -127,7 +127,16 @@ Stereolabs 포럼, NVIDIA 포럼, 레딧 — 전부 답이 다르다:
 
 JetPack 6.1은 플래싱 자체가 실패했다. JetPack 6.2.0은 플래싱은 됐지만 ZED Link 설치 시 L4T 버전과 디펜던시 충돌.
 
-**JetPack 6.2.1**이 모든 것이 맞아떨어지는 유일한 버전이다: L4T 커널 버전(36.4.0)이 ZED Link가 기대하는 것과 일치하고, GMSL2 드라이버가 정상 로드되고, `i2cdetect`에 드디어 뭔가 나온다.
+ZED SDK도 문제다. Stereolabs 사이트에서 `.run` 파일을 받아서 설치하는데, **SDK 버전과 L4T 버전이 정확히 일치하지 않으면 설치 자체가 실패**하거나 설치는 되는데 카메라를 못 찾는다. 에러 메시지도 제각각이다:
+
+```
+[ZED SDK] Dependency error: L4T version mismatch
+[ZED Link] Kernel module build failed: incompatible kernel headers
+```
+
+이런 식이다. SDK 5.2.0을 설치했다가 ZED Link 1.4.0과 충돌, SDK 5.1.x로 다운그레이드하면 CUDA 버전 불일치 — 한 레이어를 바꾸면 다른 레이어가 깨진다.
+
+**JetPack 6.2.1**이 모든 것이 맞아떨어지는 유일한 버전이다: L4T 커널 버전(36.4.0)이 ZED Link가 기대하는 것과 일치하고, ZED SDK 5.2.1이 정상 설치되고, GMSL2 드라이버가 로드되고, `i2cdetect`에 드디어 뭔가 나온다.
 
 ---
 

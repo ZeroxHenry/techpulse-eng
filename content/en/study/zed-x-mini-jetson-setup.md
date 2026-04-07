@@ -129,7 +129,16 @@ Stereolabs forums, NVIDIA forums, Reddit threads — everyone has a different an
 
 JetPack 6.1 wouldn't even flash successfully on my hardware. JetPack 6.2.0 flashed fine but ZED Link wouldn't install properly — dependency conflicts with the L4T version.
 
-**JetPack 6.2.1** is the one where everything aligns: the L4T kernel version (36.4.0) matches what ZED Link expects, the GMSL2 driver loads correctly, and `i2cdetect` finally shows something.
+The ZED SDK itself was another headache. You download `.run` installers from Stereolabs, but **if the SDK version doesn't exactly match your L4T version, the install either fails outright or silently can't find the camera**. Error messages vary wildly:
+
+```
+[ZED SDK] Dependency error: L4T version mismatch
+[ZED Link] Kernel module build failed: incompatible kernel headers
+```
+
+I installed SDK 5.2.0, it conflicted with ZED Link 1.4.0. Downgraded to SDK 5.1.x, then CUDA version mismatch. Change one layer and another breaks.
+
+**JetPack 6.2.1** is the one where everything aligns: the L4T kernel version (36.4.0) matches what ZED Link expects, ZED SDK 5.2.1 installs cleanly, the GMSL2 driver loads correctly, and `i2cdetect` finally shows something.
 
 ---
 
