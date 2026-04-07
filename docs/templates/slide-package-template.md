@@ -163,7 +163,7 @@
 
 **화면에 표시:**
 ```
-📝 블로그: techblips.com/study/[slug]
+📝 블로그: 0xhenry.dev/study/[slug]
 다음 영상: [다음 주제]
 구독 & 좋아요
 ```

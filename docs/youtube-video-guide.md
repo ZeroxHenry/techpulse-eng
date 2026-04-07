@@ -9,7 +9,7 @@
 
 **채널명:** 0xH (헥세이치)
 **의미:** 0x(hex 접두사, 엔지니어/개발자) + H(Henry)
-**블로그:** StackPulse (techblips.com)
+**블로그:** StackPulse (0xhenry.dev)
 
 ---
 
@@ -573,7 +573,7 @@ categories:
 17:00 다음 예고
 
 📝 블로그 글 (코드 + 상세 정리):
-https://techblips.com/ko/study/[slug]
+https://0xhenry.dev/ko/study/[slug]
 
 🔧 사용한 장비/소프트웨어:
 - [보드명]

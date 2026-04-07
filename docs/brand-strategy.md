@@ -14,7 +14,7 @@
 | **채널명** | 0xH |
 | **발음** | 헥세이치 |
 | **의미** | 0x(hex, 엔지니어의 언어) + H(Henry) |
-| **블로그** | StackPulse (techblips.com) |
+| **블로그** | StackPulse (0xhenry.dev) |
 
 ### 한 줄 정의
 
