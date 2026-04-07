@@ -76,8 +76,8 @@ jobs:
 
       - name: Push changes
         run: |
-          git config user.name "claude-bot"
-          git config user.email "claude-bot@0xhenry.dev"
+          git config user.name "0xhenry-bot"
+          git config user.email "0xhenry-bot@0xhenry.dev"
           git add -A
           git diff --cached --quiet && echo "No changes" || (git commit -m "redesign: homepage + navigation (Task 1)" && git push)
 
@@ -137,8 +137,8 @@ jobs:
 
       - name: Push changes
         run: |
-          git config user.name "claude-bot"
-          git config user.email "claude-bot@0xhenry.dev"
+          git config user.name "0xhenry-bot"
+          git config user.email "0xhenry-bot@0xhenry.dev"
           git add -A
           git diff --cached --quiet && echo "No changes" || (git commit -m "redesign: post detail pages (Task 2)" && git push)
 
@@ -191,8 +191,8 @@ jobs:
 
       - name: Push changes
         run: |
-          git config user.name "claude-bot"
-          git config user.email "claude-bot@0xhenry.dev"
+          git config user.name "0xhenry-bot"
+          git config user.email "0xhenry-bot@0xhenry.dev"
           git add -A
           git diff --cached --quiet && echo "No changes" || (git commit -m "redesign: radar page (Task 3)" && git push)
 
@@ -241,8 +241,8 @@ jobs:
 
       - name: Push changes
         run: |
-          git config user.name "claude-bot"
-          git config user.email "claude-bot@0xhenry.dev"
+          git config user.name "0xhenry-bot"
+          git config user.email "0xhenry-bot@0xhenry.dev"
           git add -A
           git diff --cached --quiet && echo "No changes" || (git commit -m "redesign: about page + polish (Task 4)" && git push)
 
@@ -294,7 +294,7 @@ jobs:
 
       - name: Push changes
         run: |
-          git config user.name "claude-bot"
-          git config user.email "claude-bot@0xhenry.dev"
+          git config user.name "0xhenry-bot"
+          git config user.email "0xhenry-bot@0xhenry.dev"
           git add -A
           git diff --cached --quiet && echo "No changes" || (git commit -m "redesign: dark mode + responsive QA (Task 5)" && git push)
