@@ -4,4 +4,3 @@ dist/
 .DS_Store
 .gstack/
 tsconfig.tsbuildinfo
-docs/output/
