@@ -3,16 +3,16 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: {
-    default: '0xHenry',
-    template: '%s | 0xHenry',
+    default: 'Henry — Robot Education Founder',
+    template: '%s | Henry — Robot Education Founder',
   },
-  description: 'Engineer Study — learning real tech from scratch.',
+  description: 'Democratizing robot education for everyone. From AI vision to biomechanical modeling, I break down complex robotics for thinkers and builders.',
   metadataBase: new URL('https://0xhenry.dev'),
   openGraph: {
     title: '0xHenry',
     description: 'Engineer Study — learning real tech from scratch.',
     url: 'https://0xhenry.dev',
-    siteName: '0xHenry',
+    siteName: 'Henry — Robot Education Founder',
     type: 'website',
     images: [
       {
