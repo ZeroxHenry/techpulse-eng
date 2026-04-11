@@ -23,6 +23,7 @@ export const t = {
     aboutWhyDesc: "No corporate fluff. No jargon for the sake of jargon. Just the engineering vision and the steps to get there. Whether you're a non-expert or a builder, you'll find a partner here.",
     studyLog: 'Robot Study',
     studyLogDesc: 'Breaking down complex robotics for the next generation of builders.',
+    logout: 'Logout',
   },
   ko: {
     home: '홈',
@@ -44,5 +45,6 @@ export const t = {
     aboutWhyDesc: '수식과 전문 용어에 매몰되지 않습니다. 기술의 본질을 꿰뚫고 실제 구현으로 이어지는 살아있는 교육을 추구합니다.',
     studyLog: '로봇 스터디',
     studyLogDesc: '차세대 로봇 빌더들을 위한 깊이 있는 기술 아카이브.',
+    logout: '로그아웃',
   },
 } as const;
